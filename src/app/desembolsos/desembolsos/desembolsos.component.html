@@ -1,1 +1,113 @@
-<p>desembolsos works!</p>
+<div id="contenedorPrincipal">
+
+    <nav id="navbar" class="navbar navbar-expand-sm navbar-light" style="background-color: #FFFFFF;">
+        <div id="inputCard" class="p-4 bg-white rounded" style="box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 20px ">
+            <div class="row">
+                <div class="col">
+
+                </div>
+                <div class="col">
+                    <section id="seccionDeImagen">
+                        <img src="../../../assets/images/SuffiPay2.png" width="210%" height="210%" alt="">
+                    </section>
+                </div>
+                <div id="iconDiv" class="col">
+                    <p  id="leaveText" ><b>Cerrar sesion</b></p> <img src="../../../assets/icono/Fa-Team-Fontawesome-FontAwesome-Arrow-Right-to-Bracket.512.png" width="6%" height="80%" alt="">
+                </div>
+            </div> 
+        </div>
+    </nav>
+    <section id="contenedorSecundario">
+        <section id="contenido">
+            <div class="row">
+                <div class="col">
+                    <div id="seccion1">
+                        <p id="helpText" ><b>Mis desembolsos</b></p>
+                    </div>
+                </div>
+                <div id="downloadButtonContainer" class="col">
+                    <button type="button" class="btn btn-primary">
+                        <i class="fa fa-arrow-down" aria-hidden="true"></i> Descargar
+                    </button>
+                </div>
+            </div>
+            <div id="seccion2">
+                <div class="row">
+                   <div class="column" style="margin-left: 3%;">
+                          <div class="inputDiv">
+                            <label>
+                                <span>Tipo de documento</span>
+                                <input [(ngModel)]="tipoDeDocumento" type="text" autocomplete="off" name="usuario">
+                            </label>
+                        </div>        
+                    </div>
+                    <div class="column">
+                        <div class="inputDiv">
+                            <label>
+                                <span>Numero de documento</span>
+                                <input [(ngModel)]="numeroDocumento" type="text" autocomplete="off" name="usuario">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="inputDiv">
+                            <label>
+                                <span>Numero de desembolso</span>
+                                <input [(ngModel)]="numeroDeDesembolso" type="text" autocomplete="off" name="usuario">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="inputDiv">
+                            <label>
+                                <span class="date">Desde</span>
+                                <input class="dateInput" [(ngModel)]="fechaInicio" placeholder="Fecha inicio" type="date" autocomplete="off" name="usuario">
+                            </label>
+                        </div> 
+                    </div>
+                    <div class="column">
+                        <div class="inputDiv">
+                            <label>
+                                <span class="date">Hasta</span>
+                                <input class="dateInput" [(ngModel)]="fechaFinal" type="date" autocomplete="off" name="usuario">
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="seccion3" scroll="no">
+                <div id="seccion4">
+                    <table class="table table-striped">
+                        <thead>
+                          <tr style="background: #F1F6FB;">
+                            <th scope="col">Fecha y hora</th>
+                            <th scope="col">Numero de desembolso</th>
+                            <th scope="col">Tipo de documento</th>
+                            <th scope="col">Numero de documento</th>
+                            <th scope="col">Monto</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let item
+                            of data.lista | tipoDocumentoFilter: tipoDeDocumento | 
+                            numeroDocumentoFilter: numeroDocumento |
+                            numeroDesembolsoFilter: numeroDeDesembolso | 
+                            fechaFilter: {fechaInicio, fechaFinal}">
+                            <td>{{item.fecha | date: 'dd-mm-yyyy hh:mm:ss'}}</td>  
+                            <td>{{item.numeroDesembolso}}</td>
+                            <td>{{item.tipoDocumento}}</td>
+                            <td>{{item.numeroDocumento}}</td>
+                            <td>{{item.monto}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            
+        </section>
+    </section>
+
+</div>
+
+
