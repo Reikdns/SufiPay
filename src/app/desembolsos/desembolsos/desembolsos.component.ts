@@ -4,7 +4,6 @@ import { Data } from 'src/app/data/data';
 import { FiltroDesembolso } from 'src/app/interfaces/filtroDesembolso';
 import { OnInit } from '@angular/core'
 import * as moment from 'moment';
-import { MatPaginator, PageEvent } from '@angular/material/paginator';
 
 
 @Component({
@@ -28,10 +27,11 @@ export class DesembolsosComponent {
     this.numeroDeDesembolso = "";
     this.numeroDocumento = "";
     this.fechaFinal = new Date("08/09/9999 23:59:59");
-    this.fechaInicio = new Date("08/09/1 00:0:00");
+    this.fechaInicio = new Date("08/09/1 00:0:00");  
   }
 
-  ngOnInit() {
+  ngOnInit()
+  {
     this._scriptService.loadScript("inputScript", "../../../assets/js/inputScript.js");
   }
 

@@ -12,7 +12,6 @@ import { MatDatepicker, MatDatepickerModule } from '@angular/material/datepicker
 import { ScriptService } from '../Services/scriptService/script.service';
 import { MatNativeDateModule } from '@angular/material/core';
 import { NgModel } from '@angular/forms'
-import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator'
 import { FechaPipe } from '../pipes/fecha.pipe';
 
 
@@ -31,8 +30,7 @@ import { FechaPipe } from '../pipes/fecha.pipe';
     MatInputModule,
     MatSelectModule,
     MatDatepickerModule,
-    MatNativeDateModule,
-    MatPaginatorModule
+    MatNativeDateModule
   ],
   exports: [
     DesembolsosComponent,
