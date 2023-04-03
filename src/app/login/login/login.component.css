@@ -1,0 +1,112 @@
+#contenedorPrincipal{
+    width: 100vw; 
+    height: 100vh;
+}
+
+#contenedorSecundario{
+    height: 100vh; 
+    width: 30vw; 
+    margin-left: auto; 
+    margin-right: auto;
+
+}
+
+#seccionDeImagen{
+    padding-left: 15%;
+    padding-top: 20%;
+}
+
+#superior{
+    
+}
+
+#inferior{
+    padding-top: 10%;
+}
+
+#inputCard{
+    border-radius: 50px;
+}
+
+.buttonSection{
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary{
+    height: 42px;
+    width: 80%;
+    background: #DD3542;
+    border-color: #DD3542;
+    --bs-btn-border-radius: 5rem;
+    font-size: 100%;
+}
+
+#helpText{
+    font-size: smaller;
+    color: rgb(88, 88, 88);
+}
+
+.rounded{
+    --bs-border-radius: 15px
+}
+
+/* estable */
+
+label{
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 8px 10px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.inputDiv{
+    margin-bottom: 10px;
+}
+
+label input{
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: none;
+    font-size: 13px;
+    background: transparent;
+    outline: none;
+    font: bold;
+    padding-left: 2.5%;
+}
+
+label span{
+    color: silver;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    transition: 0.25s;
+    cursor: text;
+    margin-top: 2%;
+}
+
+span, input{
+    font: 100%/100% Verdana;
+    padding: 0;
+}
+
+label.focus{
+    border-color: silver;
+}
+
+label span.focus{
+    border-color: silver;
+}
+
+label span.top{
+    left: 5%;
+    top: 5%;
+    font-size: 75%;
+}
+
