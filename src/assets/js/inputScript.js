@@ -1,4 +1,4 @@
-const inputs = document.querySelectorAll('input');
+inputs = document.querySelectorAll('input');
 
 inputs.forEach( input => {
     input.onfocus = () => {

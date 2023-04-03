@@ -7,18 +7,24 @@ import { DesembolsosModule } from './desembolsos/desembolsos.module';
 import { LoginModule } from './login/login.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ScriptService } from './Services/scriptService/script.service'
+import { FormsModule } from '@angular/forms';
+import { TipoDocumentoPipe } from './Pipes/tipoDocumento.pipe';
+import { NumeroDesembolsoPipe } from './Pipes/numeroDesembolso.pipe';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     DesembolsosModule,
     LoginModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FontAwesomeModule,
   ],
   providers: [
     ScriptService

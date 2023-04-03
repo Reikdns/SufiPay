@@ -1,0 +1,172 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+
+body{
+    overflow-x: hidden;
+}
+
+#contendorPrincipal{
+    width: 97vw;
+
+    height: 100vh;
+}
+
+#seccionDeImagen{
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar{
+    box-shadow: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#inputCard{
+    width: 100%;
+}
+
+#leaveText{
+    display: inline;
+    margin-right: 4%;
+    padding-top: 100%;
+}
+
+#iconDiv{
+    text-align: right;
+}
+
+#contenedorSecundario{
+    
+}
+
+#seccion1{
+    height: 12vh;
+    width: 50vw;
+}
+
+#seccion2{
+    height: 12vh;
+    width: 100vw;
+
+    background: #FAFAFA;
+}
+
+#seccion3{
+    height: 61vh;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+
+#seccion4{
+    max-height: 5vh;
+    width: 100vw;
+}
+
+
+#helpText{
+  padding-top: 4.8%;
+  margin-left: 7%;
+  font-size: medium;
+}
+
+.btn-primary{
+    height: 42px;
+    width: 40%;
+    background: #DD3542;
+    border-color: #DD3542;
+    --bs-btn-border-radius: 5rem;
+    font-size: 100%;
+}
+
+#downloadButtonContainer{
+    padding-top: 1.8%;
+    padding-left: 20%;
+    text-align: center;
+}
+
+.column{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 1%;
+    width: 8.5vw;
+    text-align: center;
+    display: inline-block;
+}
+td{
+    text-align: center;
+}
+th{
+    text-align: center;
+}
+
+label{
+    display: block;
+    width: 18vw;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 8px 10px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background: white;
+}
+
+.inputDiv{
+    margin-bottom: 10px;
+}
+
+label input{
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: none;
+    font-size: 13px;
+    background: transparent;
+    outline: none;
+    font: bold;
+    padding-left: 2.5%;
+}
+
+.dateInput{
+   
+    padding-top: 4%;
+}
+
+
+label span{
+    color: silver;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    transition: 0.25s;
+    cursor: text;
+    margin-top: 2%;
+}
+
+span, input{
+    font: 100%/100% Verdana;
+    padding: 0;
+}
+
+label.focus{
+    border-color: silver;
+}
+
+label span.focus{
+    border-color: silver;
+}
+
+label span.top{
+    left: 5%;
+    top: 5%;
+    font-size: 75%;
+}
+
+label span.date{
+    left: 5%;
+    top: 5%;
+    font-size: 75%;
+}
